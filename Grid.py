@@ -6,6 +6,7 @@ chromeOptions =webdriver.ChromeOptions()
 # chromeOptions.set_capability("platformName", "")
 chromeOptions.set_capability("browserName","chrome")
 
+
 driver=webdriver.Remote(
    command_executor="http://localhost:4444/wd/hub",
        options=chromeOptions

@@ -14,14 +14,16 @@ for radio in all_radio:
     print(radio.is_displayed())
     radio.click()
     print(radio.is_selected())
-# drive.find_element(By.CSS_SELECTOR,"#exampleInputPassword1").send_keys("Chandu@123")
-# email=drive.find_element(By.NAME,"email")
-# email.send_keys("chandu@gmail.com")
-# print(email.get_attribute('value'))
-# print(email.get_attribute('name'))
+
+all_checkbox=drive.find_elements(By.XPATH,"//div[@id='checkbox-example']/fieldset/label/input")
+for checkbox in all_checkbox:
+    print(checkbox.is_displayed())
+    checkbox.click()
+    print(checkbox.is_selected())
+
 
 time.sleep(5)
 drive.close()
-driver.qui
+drive.quit()
 
 
