@@ -22,6 +22,5 @@ for radio in all_radio:
 
 time.sleep(5)
 drive.close()
-driver.qui
 
 
