@@ -24,5 +24,6 @@ for checkbox in all_checkbox:
 
 time.sleep(5)
 drive.close()
+drive.quit()
 
 
